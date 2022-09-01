@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css" />
@@ -11,18 +12,21 @@
     <title>آسان آموز برنامه نویسی</title>
 
     @livewireStyles
-  </head>
+</head>
+<llivewire:header />
 
-  <body dir="rtl">
+<body dir="rtl">
 
 
     {{ $slot }}
 
+    <livewire:footer />
 
     <script src="/assets/js/jquery-3.5.1.min.js"></script>
     <script src="/assets/js/popper.js"></script>
     <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="/assets/js/grid.js"></script>
     @livewireScripts
-  </body>
+</body>
+
 </html>
