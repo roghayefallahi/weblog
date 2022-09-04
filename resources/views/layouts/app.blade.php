@@ -13,11 +13,11 @@
 
     @livewireStyles
 </head>
-<llivewire:header />
+
 
 <body dir="rtl">
 
-
+    <livewire:header />
     {{ $slot }}
 
     <livewire:footer />
