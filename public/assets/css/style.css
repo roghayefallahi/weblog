@@ -19,6 +19,7 @@ li {
 
 a {
   text-decoration: none !important;
+  color: #212529;
 }
 
 html {
@@ -206,6 +207,10 @@ body {
 
 .h_2_5 {
   height: 2.5rem;
+}
+.h_85px {
+  height: 85px !important;
+  overflow: hidden;
 }
 
 .hover_shadow {
