@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Livewire\Article\Article;
+use App\Http\Livewire\Auth\Login;
+use App\Http\Livewire\Auth\Regirter;
 use App\Http\Livewire\Index\Index;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +21,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', Index::class);
+Route::get('/article/{id}', Article::class)->name('article');
+Route::get('/login', Login::class)->name('login');
+//Route::get('/register', Regsirter::class)->name('register');
