@@ -26,7 +26,24 @@
     <script src="/assets/js/popper.js"></script>
     <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="/assets/js/grid.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @livewireScripts
+    <script>
+        window.livewire.on('showAlert', function(message) {
+            Swal.fire({
+                title: message,
+                icon: 'success',
+                showConfirmButtonText: false,
+
+            })
+
+        })
+
+     
+
+   
+     
+    </script>
 </body>
 
 </html>

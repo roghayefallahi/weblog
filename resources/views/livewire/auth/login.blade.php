@@ -2,6 +2,7 @@
 
     <div class="row justify-content-center align-items-center">
         <form action="" class="bg_blur_light p-4 col-12 col-md-6 my-5 shadow ">
+            @csrf
             <i class="fas fa-user-check fa-3x d-block text-center my-3"></i>
             <h5 class="text-center">فرم ورود</h5>
             <div class="form-group row justify-content-center">
