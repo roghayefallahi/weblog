@@ -19,7 +19,7 @@ class Login extends Component
 
         $this->validate([
             'data.email' => 'required | email',
-            'data.password' => 'required | string | min:6 ',
+            'data.password' => 'required | string | min:6  ',
         ]);
 
         if (Auth::attempt([
