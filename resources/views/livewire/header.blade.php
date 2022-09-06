@@ -2,7 +2,7 @@
     <div class="row m-0 justify-content-between w-100 align-items-center">
     
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">ROFA</a>
+            <a class="navbar-brand" href="{{ route('home') }}">ROFA</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -16,6 +16,9 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">درباره ی ما</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('search', ['catId' => 0]) }}">مقالات</a>
                 </li>
                 @if( Auth::check() )
                 <li class="nav-item dropdown">
@@ -36,9 +39,10 @@
             </div>
           </nav>
         <div class="col-12 col-md-4 form-group search_box  d-none d-md-block">
-            <input type="text" class="form-control rounded_5 placeholder_gray shadow-sm"
-                placeholder="دنبال چی می گردی؟" />
-            <a href="/search.html" class="fas fa-search search_btn"></a>
+            <input type="text" class="form-control rounded_5 placeholder_gray shadow-sm" 
+                placeholder="دنبال چی می گردی؟" wire:model="char" />
+            
+            <a href="{{ route('search', ['catId' => 0 , 'char' => $char])}}" class="fas fa-search search_btn"></a>
         </div>
     </div>
 </header>
