@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
  
-Route::get('/', Index::class);
+Route::get('/', Index::class)->name('home');
 Route::get('/article/{id}', Article::class)->name('article');
 Route::get('/login', Login::class)->name('login')->middleware('guest');
 Route::get('/register', Register::class)->name('register')->middleware('guest');
